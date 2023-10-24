@@ -28,10 +28,10 @@ import androidx.core.content.ContextCompat
 import androidx.core.widget.ImageViewCompat
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProviders
-import com.example.android.databinding.basicsample.R
+import com.android.practice.kotlin_basic.R
+import com.android.practice.kotlin_basic.databinding.PlainActivitySolution3Binding
 import com.example.android.databinding.basicsample.data.Popularity
 import com.example.android.databinding.basicsample.data.SimpleViewModel
-import com.example.android.databinding.basicsample.databinding.PlainActivitySolution3Binding
 
 /**
  * Third version of the Activity in the codelab.
@@ -77,6 +77,7 @@ class PlainOldActivitySolution3 : AppCompatActivity() {
             Popularity.NORMAL -> context.theme.obtainStyledAttributes(
                 intArrayOf(android.R.attr.colorForeground)
             ).getColor(0, 0x000000)
+
             Popularity.POPULAR -> ContextCompat.getColor(context, R.color.popular)
             Popularity.STAR -> ContextCompat.getColor(context, R.color.star)
         }
@@ -87,9 +88,11 @@ class PlainOldActivitySolution3 : AppCompatActivity() {
             Popularity.NORMAL -> {
                 ContextCompat.getDrawable(context, R.drawable.ic_person_black_96dp)
             }
+
             Popularity.POPULAR -> {
                 ContextCompat.getDrawable(context, R.drawable.ic_whatshot_black_96dp)
             }
+
             Popularity.STAR -> {
                 ContextCompat.getDrawable(context, R.drawable.ic_whatshot_black_96dp)
             }

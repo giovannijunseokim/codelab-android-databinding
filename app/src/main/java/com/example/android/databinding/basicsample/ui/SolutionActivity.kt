@@ -20,9 +20,9 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProviders
-import com.example.android.databinding.basicsample.R
+import com.android.practice.kotlin_basic.R
+import com.android.practice.kotlin_basic.databinding.SolutionBinding
 import com.example.android.databinding.basicsample.data.SimpleViewModelSolution
-import com.example.android.databinding.basicsample.databinding.SolutionBinding
 
 /**
  * Final codelab solution.
