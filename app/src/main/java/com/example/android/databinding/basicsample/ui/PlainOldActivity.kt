@@ -46,7 +46,6 @@ class PlainOldActivity : AppCompatActivity() {
         setContentView(R.layout.plain_activity)
 
         // TODO: Explicitly setting initial values is a bad pattern. We'll fix that.
-        updateName()
         updateLikes()
     }
 
@@ -57,14 +56,6 @@ class PlainOldActivity : AppCompatActivity() {
     fun onLike(view: View) {
         viewModel.onLike()
         updateLikes()
-    }
-
-    /**
-     * So much findViewById! We'll fix that with Data Binding.
-     */
-    private fun updateName() {
-        findViewById<TextView>(R.id.plain_name).text = viewModel.name
-        findViewById<TextView>(R.id.plain_lastname).text = viewModel.lastName
     }
 
     /**
